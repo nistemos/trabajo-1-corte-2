@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
+
 router.get('/', (req,res)=>{
     res.render('../app/View/links/inicio',{
         titulo: 'Trabajo 1 corte 2',
