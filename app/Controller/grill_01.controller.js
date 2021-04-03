@@ -1,8 +1,7 @@
 async function CGrill01(req, res) {
-    res.render('../app/View/links/login');
 }
 async function RGrill01(req, res) {
-    
+    res.render('../app/View/links/login');
 }
 async function UGrill01(req, res) {
     

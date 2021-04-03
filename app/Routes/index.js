@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const routeController = require('../Controller/route.controller');
+const Grill_01 = require('../Controller/Grill_01.controller');
+
 
 router.get('/', (req,res)=>{
     res.render('../app/View/links/inicio',{
@@ -22,7 +23,7 @@ router.get('/clientes', (req,res)=>{
 /*router.get('/ingresar', (req,res)=>{
     res.render('../app/View/links/login');
 });*/
-router.get('/ingresar', routeController.Grill_01.CGrill01);
+router.get('/ingresar', Grill_01.RGrill01);
 router.get('/contactenos', (req,res)=>{
     res.send('contactenos');
 });
