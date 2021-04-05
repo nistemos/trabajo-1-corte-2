@@ -1,7 +1,9 @@
+const ModelGrill01 = require('../Model/grill_01.model');
+
 async function CGrill01(req, res) {
 }
 async function RGrill01(req, res) {
-    res.render('../app/View/links/login');
+    res.render('../app/View/links/listarusuario');
 }
 async function UGrill01(req, res) {
     
