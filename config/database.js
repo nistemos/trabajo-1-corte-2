@@ -1,7 +1,7 @@
 
 const mysql = require('mysql');
 const {promisify} =  require('util');
-const {database}= require('../config/env/keys');
+const {database} = require('./env/keys');
 
 const pool = mysql.createPool(database);
 pool.getConnection((err, connection)=>{
@@ -18,7 +18,7 @@ pool.getConnection((err, connection)=>{
     }
     if (connection) {
         connection.release();
-        console.log('estamos full')
+        console.log('Conexión Exitosa')
     }
     return;
 })

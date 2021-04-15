@@ -4,6 +4,7 @@ module.exports = function () {
     
     async function create(){
         let query = "CALL ListarUsuarios()";
+        return await pool.query(query);
     }
     async function read(){
         let query = "CALL ListarUsuarios()";
@@ -14,11 +15,10 @@ module.exports = function () {
     async function delet(){
         let query = "CALL ListarUsuarios()";
     }
-
     return{
         create,
         read,
         update,
+        delet
     }
-
 }

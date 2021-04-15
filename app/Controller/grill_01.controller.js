@@ -1,9 +1,16 @@
 const ModelGrill01 = require('../Model/grill_01.model');
 
 async function CGrill01(req, res) {
+    /*const AllAllumnos = await ModelGrill01().create();
+    console.log(AllAllumnos);
+    console.log('Hola mundo');
+    res.render('../app/View/links/listarusuario',{AllAllumnos});*/
 }
 async function RGrill01(req, res) {
-    res.render('../app/View/links/listarusuario');
+    const AllAllumnos = await ModelGrill01().create();
+    console.log(AllAllumnos);
+    console.log('Hola mundo');
+    res.render('../app/View/links/listarusuario',{AllAllumnos});
 }
 async function UGrill01(req, res) {
     
